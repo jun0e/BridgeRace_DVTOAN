@@ -20,7 +20,7 @@ public class Animating : MonoBehaviour
         bool isRunning = animator.GetBool("isRunning");
         if (!isRunning && velocity > 0.05f)
         {
-            animator.SetBool("isRunning", true);
+            animator.SetBool("isRunning", true);    
             return;
         }
         if (isRunning && velocity < 0.05f)
